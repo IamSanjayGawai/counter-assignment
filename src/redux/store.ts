@@ -2,7 +2,7 @@ import { configureStore } from "@reduxjs/toolkit";
 import counterReducer from "./counterSlice";
 import userReducer from "./userSlice";
 import textEditorReducer from "./textEditorSlice";
-import authReducer from "./AuthSlice";
+import authReducer from "./authSlice";
 import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
 
 export const store = configureStore({
