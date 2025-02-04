@@ -1,11 +1,26 @@
-
+import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from "react-router-dom";
 import './App.css'
+import Home from './pages/Home'
 
-function App() {
+
+
+const App = () => {
+  return (
+
+      <Router>
+        <MainApp />
+      </Router>
+
+  );
+};
+
+const MainApp = () => {
 
   return (
     <>
-    <div>hello</div>
+          <Routes>
+<Route index element={<Home />} />
+</Routes>
     </>
   )
 }
